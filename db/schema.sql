@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS fanfic_db;
+DROP DATABASE IF EXISTS stories_db;
 
-CREATE DATABASE fanfic_db;
+CREATE DATABASE stories_db;
