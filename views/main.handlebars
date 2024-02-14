@@ -2,15 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tale SPin</title>
+    <title>Tale Spin</title>
     <link rel="stylesheet" href="/public/style.css">
   </head>
   <body>
     <header>
     <h1>{{title}}</h1>
     </header>
-    
+    <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
     <main>
-    <p>{{body}}</p>
+       <script >
+        <h2>Welcome, {{username}}!</h2>
+      </script>
+      
+      <p>{{body}}</p>
+      
+       <div id="blog-posts">
+       </div>
+     
+      <script >
+        {{#each posts}}
+          <div class="blog-post">
+            <h2>{{title}}</h2>
+            <p>{{content}}</p>
+            <p>Published on {{date}}</p>
+          </div>
+        {{/each}}
+    </script>
+    
     </main>
   </body>
