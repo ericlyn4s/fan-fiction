@@ -11,7 +11,7 @@ Story.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -19,16 +19,9 @@ Story.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    series: {
-      type: DataTypes.STRING,
+    created_date: {
+      type: DataTypes.DATE,
       allowNull: false,
-    },
-    creator_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'user',
-        key: 'id',
-      },
     },
   },
   {

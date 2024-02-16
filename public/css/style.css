@@ -1,11 +1,12 @@
 :root {
-  --primary: blue;
-  --secondary: #6c6b67;
+  --primary: #3d5852;
+  --secondary: #86938f;
   --tertiary: #5e877f;
   --quatrinary: #6c6b67;
   --light: #e3e4e3;
   --dark: #182c23;
   --error: rgb(228, 46, 1);
+  --border-radius: 0.3rem;
 }
 
 body {
@@ -20,6 +21,7 @@ body {
 
 a {
   color: var(--dark);
+  text-decoration: none;
 }
 
 a:visited {
@@ -27,10 +29,10 @@ a:visited {
 }
 
 header {
-  padding: 30px;
-  text-align: left;
-  background: #253A41;
-  color: var(--secondary);
+  padding: 40px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
 }
 
 main {
@@ -47,25 +49,26 @@ aside {
   color: var(--light);
 }
 
-nav  {
+nav {
   display: flex;
+  background-color: var(--secondary);
 }
 
-nav a, #logout {
+nav a {
   color: var(--light);
-  padding: 0px 20px 5px 0px;
+  padding: 14px 20px;
   text-decoration: none;
   text-align: center;
-  border: none;
 }
 
-nav a, #logout:hover {
+nav a:hover {
   color: var(--secondary);
+  background-color: var(--dark);
 }
 
-main .post {
+.story {
   flex: 4;
-  background-color: var(--secondary);
+  background-color: #fff;
   padding: 50px;
   display: flex;
   flex-flow: row wrap;
@@ -73,25 +76,22 @@ main .post {
   align-items: center;
 }
 
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
 img {
   max-width: 100%;
   height: auto;
-  align-items: left;
-
 }
 
-.painting {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.painting-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-}
 
 /* CARDS */
 .card {
@@ -132,7 +132,7 @@ img {
   font-weight: bold;
 }
 
-.gallery-name {
+.story-card {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
