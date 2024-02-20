@@ -68,12 +68,10 @@ nav a:hover {
 
 .story {
   flex: 4;
-  background-color: #fff;
-  padding: 50px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+  background-color: var(--quatrinary);
+  padding: 5px;
+  display: block;
+
 }
 
 .btn-no-style {
@@ -97,9 +95,7 @@ img {
 .card {
   margin: 20px;
   flex: 0 1 300px;
-  border: 7px double var(--dark);
-  border-radius: 10px;
-  background-color: var(--light);
+  background-color: var(--secondary);
   color: var(--dark);
 }
 
@@ -118,29 +114,33 @@ img {
 
 .card header {
   color: var(--light);
+  text-align: left;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0;
-  background-color: var(--tertiary);
-  padding: 0.625rem;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  background-color: var(--primary);
+  padding: 10px;
 }
 
 .card-body {
-  font-size: 1.4rem;
-  text-align: center;
+  font-size: 17px;
+  text-align: left; 
+}
+
+.card-subheader {
+  background-color: var(--light);
   font-weight: bold;
+  margin: 0;
+  padding:
+
 }
 
 .story-card {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 100px;
-  padding-left: 100px;
+  border: 10px  var(--light);
+
 }
 
 /* LAYOUT */
