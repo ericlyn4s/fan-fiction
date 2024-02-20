@@ -120,18 +120,21 @@ img {
   margin: 0;
   background-color: var(--primary);
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-body {
   font-size: 17px;
   text-align: left; 
+
 }
 
 .card-subheader {
   background-color: var(--light);
   font-weight: bold;
   margin: 0;
-  padding:
+  padding: 7px;
 
 }
 

@@ -1,8 +1,11 @@
 <section class="card">
   <a href="/story/{{id}}">
-    <header>{{title}}</header>
+    <header>
+      <div>{{title}}</div>
+      <div id="poster">Posted on {{format_time createdAt}} by {{user.username}}</div>
+    </header>
+    <div class="card-subheader">Series: {{series}}</div>
     <div class="card-body">
-      <div class="card-subheader">Series: {{series}}</div>
       <body>{{content}}</body>
     </div>
   </a>
