@@ -8,6 +8,7 @@ const routes = require('./controllers');
 const sequelize = require('./config/connection');
 const helpers = require('./utils/helpers');
 
+// Initialize express and set port to local environment
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -21,6 +22,7 @@ const sess = {
   }),
 };
 
+// New session
 app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
