@@ -3,6 +3,7 @@ const sequelize = require('../config/connection');
 
 class Story extends Model {}
 
+// Story relates to USER through user ID
 Story.init(
   {
     id: {
@@ -11,7 +12,7 @@ Story.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    title: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -19,9 +20,16 @@ Story.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    created_date: {
-      type: DataTypes.DATE,
+    series: {
+      type: DataTypes.STRING,
       allowNull: false,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'user',
+        key: 'id',
+      },
     },
   },
   {

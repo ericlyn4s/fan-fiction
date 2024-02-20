@@ -2,9 +2,8 @@ const User = require('./User');
 const Story = require('./Story');
 const Comment = require('./Comment');
 
-<<<<<<< HEAD
-// POST belongs to USER through user_id
-Post.belongsTo(User, {
+// Story belongs to USER through user_id
+Story.belongsTo(User, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
@@ -15,14 +14,10 @@ Comment.belongsTo(User, {
   onDelete: 'CASCADE',
 });
 
-// since we are going to be retrieving the post and then its associated comments, we would use Post.hasMany
-Post.hasMany(Comment, {
-  foreignKey: 'post_id',
+// since we are going to be retrieving the Story and then its associated comments, we would use Story.hasMany
+Story.hasMany(Comment, {
+  foreignKey: 'story_id',
   onDelete: 'CASCADE',
 });
 
-module.exports = { User, Post, Comment };
-=======
-
-module.exports = { User, Story};
->>>>>>> 5f9759865be0684df5f79604d5b735e4462f29d5
+module.exports = { User, Story, Comment };

@@ -1,13 +1,21 @@
 const { Story } = require('../models');
 
+// Starting data for the Story table
 const storydata = [
   {
-    name: 'Blossoming Apricot',
-    content: 'LedyX',
-    created_date: 'March 30, 2018',
+    title: 'Tyrion ascends the thrones',
+    content: "Tyrion, aftr surviving the events of Game of Thrones, is given the opportunity to become king.",
+    series: "Game of Thrones",
+    user_id: 1,
+  },
+  {
+    title: 'Cersei joins the Starks',
+    content: "TCersei Lannister comes to her senses and joines the Stark effort.",
+    series: "Game of Thrones",
+    user_id: 1,
   },
 ];
 
-const seedStories = () => Story.bulkCreate(storydata);
+const seedStory = () => Story.bulkCreate(storydata);
 
-module.exports = seedStories;
+module.exports = seedStory;
