@@ -3,6 +3,7 @@
   <div class="story-details">
     <h3>{{story.name}}</h3>
     <p>{{story.content}}</p>
-    <p>created on {{ format_date story.created_date}}</p>
+    <p>created on {{format_date story.createdAt}}</p>
+    <p>Likes: {{story.likeCount}}</p>
   </div>
 </section>
