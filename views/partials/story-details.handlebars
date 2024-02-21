@@ -2,11 +2,24 @@
   <a href="/story/{{id}}">
     <header>
       <div>{{title}}</div>
-      <div id="poster">Posted on {{format_time createdAt}} by {{user.username}}</div>
+      <div id="poster">Posted on
+        {{format_time createdAt}}
+        by
+        {{user.username}}</div>
     </header>
     <div class="card-subheader">Series: {{series}}</div>
     <div class="card-body">
       <body>{{description}}</body>
     </div>
   </a>
+
+  <footer class="m-2">
+    <div class="like-count font-italic mx-2">Likes: {{likeCount}}</div>
+    <a
+      class="btn like-btn btn-secondary"
+      href="api/stories/like-story/{{id}}"
+    >Like</a>
+  </footer>
 </section>
+
+{{!-- <script src="/js/story.js"></script> --}}
