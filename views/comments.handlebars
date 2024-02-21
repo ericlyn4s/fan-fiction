@@ -1,0 +1,36 @@
+<section class="card">
+
+<!-- Each story shows the title and created time/date -->
+<header>
+    <div>{{story.title}}</div>
+    <div id="storyer">Posted on {{format_time story.createdAt}}</div>
+</header>
+
+<div class="card-body">
+    <p>{{story.content}}</p>
+</div>
+
+</section>
+
+<section class="card">
+<form class="form comment-form comment-box" id="comment-form">
+    <div class="form-group">
+        <label for="comment-body" class="form-group">Add a comment:</label>
+        <input class="form-input" type="comment" id="comment-body" />
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+</section>
+
+<!-- Using a helper to then display all comments -->
+{{#each story.comments as |comment|}}
+{{> comment-details}}
+{{/each}}
+
+</section>
+<script src="/js/comment.js"></script>
+
+
+
