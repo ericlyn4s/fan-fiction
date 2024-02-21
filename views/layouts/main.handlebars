@@ -22,17 +22,19 @@
   </head>
 
   <body>
-    <header>
-      <h1>Tale Spin</h1>
-    </header>
-    <nav>
-      <a href="/">Home</a>
-      {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">Logout</button>
-      {{else}}
-        <a href="/login">Login</a>
-      {{/if}}
-    </nav>
+    <div id="main-header">
+      <header>
+        <img src="/images/logo.png" class="small-image" href="/"/>
+        <nav>
+
+          {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+          {{else}}
+            <a href="/login">Login</a>
+          {{/if}}
+        </nav>
+      </header>
+    </div>
     <main>
       <div class="story">
         {{{body}}}
