@@ -52,6 +52,9 @@ CREATE DATABASE stories_db;
 DB_NAME='stories_db'
 DB_USER='your_db_username'
 DB_PASSWORD='your_db_password'
+SECRET='your_secret_key'
+HOST='localhost'
+PORT=3306
 ```
 
 Feel free to explore our platform and share your movie review stories with fellow users!
@@ -72,7 +75,6 @@ To run Tale Spin, follow these steps: 🏃
 6. **Seed Data (Optional)**: If needed, run `npm run seed` to seed the database with initial data.
 
 ## Demo video
-
 
 https://github.com/ericlyn4s/tale-spin/assets/147503829/69bd0241-f231-4602-84f0-2ac2fd4db2a4
 
