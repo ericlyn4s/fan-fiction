@@ -56,9 +56,9 @@ DB_PASSWORD='your_db_password'
 
 Feel free to explore our platform and share your movie review stories with fellow users!
 
-## 🏃 How to Run
+## How to Run
 
-To run Tale Spin, follow these steps:
+To run Tale Spin, follow these steps: 🏃 
 
 1. **Create SQL Database**: Execute the provided [SQL query](#sql-query) to create the necessary database.
 2. **Install Dependencies**: Run `npm install` to install all project dependencies.
@@ -71,8 +71,12 @@ To run Tale Spin, follow these steps:
 
 6. **Seed Data (Optional)**: If needed, run `npm run seed` to seed the database with initial data.
 
-## 🎞️ Demo video
+## Demo video
 
-## 🚀 Live Lin
+
+https://github.com/ericlyn4s/tale-spin/assets/147503829/69bd0241-f231-4602-84f0-2ac2fd4db2a4
+
+
+## Live Link
 
 Explore the live version of Tale Spin [here!](http://localhost:3001/) 👀
