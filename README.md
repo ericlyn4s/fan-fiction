@@ -81,4 +81,4 @@ https://github.com/ericlyn4s/tale-spin/assets/147503829/69bd0241-f231-4602-84f0-
 
 ## Live Link
 
-Explore the live version of Tale Spin [here!](http://localhost:3001/) 👀
+Explore the live version of Tale Spin [here!](https://tale-spin-7c174798f8bd.herokuapp.com/) 👀
