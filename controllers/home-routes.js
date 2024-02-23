@@ -21,10 +21,10 @@ router.get("/", async (req, res) => {
       ],
       attributes: {
         include: [
-          [sequelize.fn("COUNT", sequelize.col("Likes.id")), "likeCount"],
+          [sequelize.fn("COUNT", sequelize.col("likes.id")), "likeCount"],
         ],
       },
-      group: ["Story.id"],
+      group: ["story.id"],
     });
 
     const stories = dbStoryData.map((story) => story.get({ plain: true }));
