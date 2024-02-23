@@ -1,17 +1,19 @@
 @font-face {
   font-family: "Distillery Strong W00 Regular";
   src: url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.eot");
-  src: url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.svg#Distillery Strong W00 Regular")format("svg");
+  src: url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.svg#Distillery Strong W00 Regular")
+      format("svg");
 }
 
-
 :root {
-  --primary: #D4514D;
+  --primary: #d4514d;
   --secondary: #86938f;
-  --tertiary: #D65450;
-  --quatrinary: #E8922C;
+  --tertiary: #d65450;
+  --quatrinary: #e8922c;
   --light: #e3e4e3;
   --dark: #233940;
   --error: rgb(228, 46, 1);
@@ -27,9 +29,9 @@ body {
 }
 
 .small-image {
-  width: 250px;  /* Adjust as needed */
+  width: 250px; /* Adjust as needed */
   max-width: 100%; /* Makes the image responsive */
-  height: auto;  /* Maintains aspect ratio */
+  height: auto; /* Maintains aspect ratio */
 }
 
 a {
@@ -39,7 +41,6 @@ a {
 a:hover {
   text-decoration: none;
   color: var(--secondary);
-  
 }
 
 #logout:hover {
@@ -58,7 +59,7 @@ a:hover {
   background: var(--dark);
   color: var(--light);
   padding-top: 10px;
-  
+
   position: fixed;
 }
 
@@ -67,7 +68,6 @@ header {
   color: var(--light);
   font-family: "Distillery Strong W00 Regular";
   letter-spacing: 2;
-  
 }
 
 main {
@@ -76,7 +76,8 @@ main {
   flex-grow: 1;
 }
 
-nav, #logout {
+nav,
+#logout {
   background-color: var(--dark);
   margin: 20px;
   padding: 10px;
@@ -106,7 +107,7 @@ nav a:hover {
   cursor: none;
   text-decoration: none;
   font-size: 100%;
-  margin-left: 16px;+;
+  margin-left: 16px;
   color: var(--primary);
 }
 
@@ -148,13 +149,12 @@ img {
   font-family: "Distillery Strong W00 Regular";
   letter-spacing: 2;
   margin: 20px 0 0 20px;
-  background-color: var(--dark)
-
+  background-color: var(--dark);
 }
 
 .card-body {
   font-size: 17px;
-  text-align: left; 
+  text-align: left;
 }
 
 .card-subheader {
@@ -163,22 +163,21 @@ img {
   margin: 0;
   color: var(--light);
   padding: 7px;
-
 }
 
 .story-card {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px  var(--light);
+  border: 10px var(--light);
 }
 
-.full-story  {
+.full-story {
   margin: 20px;
 }
 
 .buttons {
-  background-color: ;
+  /* background-color: ; */
 }
 
 .login-header {
@@ -201,3 +200,4 @@ img {
   padding-left: 20px;
   padding-top: 0px;
 }
+
