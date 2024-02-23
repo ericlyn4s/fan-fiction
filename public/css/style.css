@@ -27,6 +27,7 @@ body {
   justify-content: flex-start;
   background-color: var(--quatrinary);
 
+
 }
 .small-image {
   width: 250px;  /* Adjust as needed */
@@ -60,6 +61,8 @@ a:hover {
   background: var(--dark);
   color: var(--light);
   padding-top: 10px;
+  
+  position: fixed;
 }
 
 header {
@@ -67,6 +70,7 @@ header {
   color: var(--light);
   font-family: "Distillery Strong W00 Regular";
   letter-spacing: 2;
+  
 }
 
 main {
@@ -94,7 +98,7 @@ nav a:hover {
   background-color: var(--quatrinary);
   padding: 5px;
   display: block;
-
+  margin-left: 300px;
 }
 
 .btn-no-style {
