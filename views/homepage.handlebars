@@ -1,10 +1,4 @@
-  {{#if loggedIn}}
-  <a href="/create-story" id="create-story" class="btn btn-primary d-inline-flex align-items-center" style="text-decoration: none;">
-  <span>Create Story</span>
-  <span class="material-icons ms-2">add_circle_outline</span>
-</a>
 
-  {{/if}}
 {{#each stories as |story|}}
 {{> story-details}}
 {{/each}}
