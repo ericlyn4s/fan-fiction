@@ -3,8 +3,6 @@
   src: url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.eot");
   src: url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.eot?#iefix")format("embedded-opentype"),
   url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.ttf")format("truetype"),
   url("https://db.onlinewebfonts.com/t/b741399e65212214a65785c0e777b3e2.svg#Distillery Strong W00 Regular")format("svg");
 }
 
@@ -20,15 +18,14 @@
 }
 
 body {
-  font-family: Arial;
+  font-family: Georgia;
   margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--quatrinary);
-
-
 }
+
 .small-image {
   width: 250px;  /* Adjust as needed */
   max-width: 100%; /* Makes the image responsive */
@@ -113,31 +110,27 @@ nav a:hover {
   color: var(--primary);
 }
 
+#comment-add {
+  width: 90%;
+  margin: 20px;
+}
+
+.btn-primary {
+  margin: 0 0 0 20px;
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-
 /* CARDS */
 .card {
   margin: 20px;
-  flex: 0 1 300px;
   background-color: var(--light);
   color: var(--dark);
-}
-
-.login-card {
-  margin: 0 0 20px 0;
-  flex: 0 0 50%;
-  max-width: 50%;
-  padding: 5px;
-  border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
-  border-style: double;
-  border-width: thick;
-  background-color: #577a7c;
-  color: var(--light);
 }
 
 .card header {
@@ -145,7 +138,6 @@ img {
   text-align: left;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 0;
   background-color: var(--primary);
   padding: 10px;
   display: flex;
@@ -160,11 +152,9 @@ img {
 
 }
 
-
 .card-body {
   font-size: 17px;
   text-align: left; 
-
 }
 
 .card-subheader {
@@ -181,13 +171,33 @@ img {
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
   border: 10px  var(--light);
-
 }
 
-/* LAYOUT */
-.container {
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-start;
-  align-items: center;
+.full-story  {
+  margin: 20px;
+}
+
+.buttons {
+  background-color: ;
+}
+
+.login-header {
+  background-color: var(--tertiary);
+  font-weight: bold;
+  font-family: "Distillery Strong W00 Regular";
+  letter-spacing: 2;
+  color: var(--light);
+  padding: 7px;
+}
+
+.card-login {
+  margin: 20px;
+  background-color: var(--light);
+  color: var(--dark);
+  padding: 0;
+}
+
+.form-group {
+  padding-left: 20px;
+  padding-top: 0px;
 }
