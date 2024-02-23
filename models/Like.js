@@ -15,7 +15,7 @@ Like.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id',
       },
     },
@@ -23,7 +23,7 @@ Like.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'Story',
+        model: 'story',
         key: 'id',
       },
     },
