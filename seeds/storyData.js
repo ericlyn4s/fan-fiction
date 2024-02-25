@@ -16,6 +16,27 @@ const storydata = [
     series: "Game of Thrones",
     user_id: 1,
   },
+  {
+    title: 'Shrek and the Woodland Oddity',
+    description: "Shrek encounters a strange mthical creature at his swap.",
+    content: `Shrek, disgruntled by yet another torch-wielding mob stomping through his precious swamp, rolled his eyes in exasperation until they landed upon a peculiar sight – a small, furry creature with wide, expressive eyes was trembling on the edge of the murky water, seeking refuge from the villagers and claiming the bog to be a haven compared to the fire-wielding humans.  Intrigued, the ogre lowered his defenses, finding unlikely amusement in the creature's proclamation.  With a gruff voice, he extended a hand, "Name's Shrek. Welcome to the swamp, oddity."  And so began a bizarre friendship  – the creature, Sprout as they were called, possessed an unyielding fascination with mud, a hearty appetite for insects normally considered repulsive, and a knack for weaving fantastical tales that filled the otherwise silent swamp with laughter.  Shrek, accustomed to solitude, slowly realized that loneliness had disguised itself as contentment, and the company of the woodland oddball brought a surprising vibrancy to his secluded existence.`,
+    series: "Shrek",
+    user_id: 1,
+  },
+  {
+    title: 'Nightmare Buffet and Killer Hairdryers',
+    description: "Rick and Morty stumble into a bizarre dimension teeming with eyeball creatures and hissing clouds, leading to a chaotic adventure involving candy bar defense tactics, a weaponized hairdryer, and the usual near-death experiences.",
+    content: `Morty hyperventilated into a paper bag, the portal gun clutched in one clammy hand while the other tried to fend off a flying eyeball with a half-eaten candy bar. "Rick, this dimension is a nightmare buffet," he whined, narrowly dodging a swooping creature made entirely of teeth, "and why are the clouds hissing?" Rick, oblivious, scooped purple goop into vials and cackled like a deranged scientist, which, to be fair, he mostly was, "Quit your whining, Morty, this stuff could rewrite the space-time continuum, or at least get us mega-rich on the Galactic Swap Net!"  A flock of toothy horrors descended, prompting a panicked yelp from Morty and a muttered curse from Rick, who reluctantly fired a blast from his modified hairdryer – because of course, it was a hairdryer – incinerating the flock and leaving a lingering scent of burnt feathers. "See? Adventure!" Rick belched, "Never boring… mostly not fatal…" he added, the last bit a bit of an afterthought, as Morty crumpled on the pulsating, neon-green ground, wondering if the candy bar was edible after all, because desperate times and all that.`,
+    series: "Rick and Morty",
+    user_id: 1,
+  },
+  {
+    title: 'Echoes in the Jungle',
+    description: "A routine paleontological expedition turns terrifying when whispers of living dinosaurs become a bone-shaking reality for Sarah and Dr. Grant on the mysterious Isla Nublar.",
+    content: `Sarah winced as another mosquito buzzed past her ear, its needle-like proboscis a constant, itchy threat in the sweltering heat of the Costa Rican jungle. Dr. Grant stood frozen beside her, eyes fixated on the towering ferns, as if expecting them to part and reveal something both wondrous and terrible. An odd tension hung in the air, heavier than the humidity, punctuated by the booming calls of unseen creatures and the rustling of leaves against a backdrop of rushing water.  Suddenly, the ground beneath them trembled, the vibrations growing stronger with each passing second, and a deafening bellow seemed to shake the very island to its core. Sarah and Grant exchanged a panicked glance as the ferns swayed violently – their visitor was approaching, a relic of a primeval age about to awaken a primal fear nestled deep within them.`,
+    series: "Jurassic Park",
+    user_id: 1,
+  },
 ];
 
 const seedStory = () => Story.bulkCreate(storydata);

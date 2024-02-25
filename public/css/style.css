@@ -26,6 +26,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   background-color: var(--quatrinary);
+  color: var(--dark);
 }
 
 .small-image {
@@ -74,6 +75,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  
 }
 
 nav,
@@ -96,6 +98,7 @@ nav a:hover {
   background-color: var(--quatrinary);
   padding: 5px;
   display: block;
+  color: var(--dark);
   margin-left: 300px;
 }
 
@@ -112,14 +115,12 @@ nav a:hover {
 }
 
 #comment-add {
-  width: 90%;
-  margin: 20px;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.btn-primary {
-  margin: 0 0 0 20px;
-  color: var(--primary);
-  background-color: var(--secondary);
+#comment-body {
+  width: 95%;
 }
 
 img {
@@ -147,8 +148,7 @@ img {
 
 #create-story {
   font-family: "Distillery Strong W00 Regular";
-  letter-spacing: 2;
-  margin: 20px 0 0 20px;
+  letter-spacing: 3;
   background-color: var(--dark);
 }
 
@@ -176,10 +176,6 @@ img {
   margin: 20px;
 }
 
-.buttons {
-  /* background-color: ; */
-}
-
 .login-header {
   background-color: var(--tertiary);
   font-weight: bold;
@@ -187,6 +183,17 @@ img {
   letter-spacing: 2;
   color: var(--light);
   padding: 7px;
+}
+
+.submit-btn {
+  background-color: #d4514d;
+  padding: 12px;
+  margin: 8px 0 8px 0;
+  border: none;
+  text-decoration: none;
+  font-size: 100%;
+  color: white;
+  font-family: Georgia;
 }
 
 .card-login {
@@ -199,5 +206,11 @@ img {
 .form-group {
   padding-left: 20px;
   padding-top: 0px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
