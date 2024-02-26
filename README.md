@@ -57,7 +57,7 @@ HOST='localhost'
 PORT=3306
 ```
 
-Feel free to explore our platform and share your movie review stories with fellow users!
+Feel free to explore our platform and share your fan fiction with fellow users!
 
 ## How to Run
 
