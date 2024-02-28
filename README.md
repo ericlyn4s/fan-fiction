@@ -53,8 +53,7 @@ DB_NAME='stories_db'
 DB_USER='your_db_username'
 DB_PASSWORD='your_db_password'
 SECRET='your_secret_key'
-HOST='localhost'
-PORT=3306
+DB_HOST='localhost'
 ```
 
 Feel free to explore our platform and share your fan fiction with fellow users!
