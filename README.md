@@ -60,7 +60,9 @@ Feel free to explore our platform and share your fan fiction with fellow users!
 
 ## How to Run
 
-To run Tale Spin, follow these steps: 🏃 
+Tale Spin can be accessed here: https://afternoon-taiga-74070-303988fd2de4.herokuapp.com/
+
+To run Tale Spin locally, follow these steps: 🏃 
 
 1. **Create SQL Database**: Execute the provided [SQL query](#sql-query) to create the necessary database.
 2. **Install Dependencies**: Run `npm install` to install all project dependencies.
